@@ -28,5 +28,5 @@ test('checkinf of the iterator correct work', () => {
     },
   );
   const result = ['Bowman', 'Anton', 'Vlad'];
-  expect([...anton]).toEqual(result);
+  expect(Array.from(anton)).toEqual(result);
 });
