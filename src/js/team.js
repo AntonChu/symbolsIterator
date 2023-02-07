@@ -6,8 +6,7 @@ export default class Team {
   [Symbol.iterator]() {
     let counter = 0;
     const length = this.members.size - 1;
-    const arr = [];
-    this.members.forEach((hero) => arr.push(hero));
+    const arr = Array.from(this.members.keys());
     return {
       next() {
         if (counter <= length) {
